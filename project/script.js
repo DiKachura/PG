@@ -34,26 +34,7 @@ $(document).on('ready', function() {
                 data.forEach((element) => { element.value = ""; });
                 $("#check").prop("checked", false);
           
-              function showBlock() {
-      let ab = document.getElementById("admin_block");
-      ab.style.display = "block";
-    }
-    function hideBlock() {
-      let ab = document.getElementById("admin_block");
-      ab.style.display = "none";
-    }
-    function becomeDarker(bd) {
-      bd.style.backgroundColor = "#d13018";
-    }
-    function becomeBrighter(bb) {
-      bb.style.backgroundColor = "#f04d35";
-    }
-    function showBorder(sb) {
-      sb.style.borderBottom = "3px solid #f14d34";
-    }
-    function hideBorder(hb) {
-      hb.style.borderBottom = "none";
-    }
+    
                 $("#submitButton").prop("disabled", true);
                 localStorage.clear();
             })
@@ -82,3 +63,9 @@ $(document).on('ready', function() {
 
   });
 });
+
+
+
+
+
+   
