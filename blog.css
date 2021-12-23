@@ -1,0 +1,72 @@
+.blog{
+    max-width: 960px;
+    font-size: 16px;
+}
+.blogimage-internalized img{
+    opacity:0.8;
+}
+.blog-guts{
+    height: 360px;
+    cursor: pointer;
+}
+.cringe::before{
+    display: block;
+    content:"";
+    position:absolute;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index:5;
+    background:linear-gradient(360deg,rgba(0,0,0,0.7),rgba(0,0,0,0) 50%);
+}
+.blog-guts a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.blog-guts a:hover h5:hover{
+    text-decoration: underline; 
+}
+.blog-guts h5, .blog-guts p{
+    font-size: 14px;
+}
+.blogimage img{
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.blogimage-internalized img{
+    height: 360px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.header-date-internalized{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+}
+.blog-desc p{
+    color: black;
+}
+.header-date-internalized h5{
+ color:white;
+}
+.blog-date{
+    color: lightgray;
+   }
+@media screen and (min-width: 770px){
+    .blog-guts{
+        height: 470px;
+    }
+    .blog-guts h5, .blog-guts p{
+        font-size: 18px;
+    } 
+    .blogimage-internalized img{
+        height: 470px;
+    } 
+    .blogimage img{
+        height: 200px;
+    }
+}
